@@ -9,6 +9,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
+import java.awt.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Game extends GameApplication {
@@ -72,6 +73,12 @@ public class Game extends GameApplication {
                 block.removeFromWorld();
             }
         });
+    }
+
+    protected void initUI() {
+        Label myText = new Label();
+        myText.setText("Hi There");
+        
     }
 
     public static void main(String[] args) {
